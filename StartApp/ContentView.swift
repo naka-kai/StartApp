@@ -9,13 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
+        HStack {
             Text("Hello")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Text("アイテム")
-                    }
-                }
+            Text("Hello")
+            Text("Hello")
         }
     }
 }
