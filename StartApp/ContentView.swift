@@ -9,15 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello, world")
-                .padding()
-            Text("Hello, SwiftUI")
-                .padding()
-            Text("Hello, Swift")
-                .padding()
+        Button(action: Report) {
+            Text("ボタンを押してください")
         }
     }
+}
+
+func Report() {
+    print("ボタンが押されました")
 }
 
 #Preview {
