@@ -9,14 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Button(action: Report) {
+        Button(action: {
+            print("ボタンが押されました!")
+        }) {
             Text("ボタンを押してください")
         }
     }
-}
-
-func Report() {
-    print("ボタンが押されました")
 }
 
 #Preview {
